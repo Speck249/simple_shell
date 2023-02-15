@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *main - simple shell
 *@ac: first parameter
