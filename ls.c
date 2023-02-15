@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *add_node - adds a node to start of list
 *@head: first parameter
