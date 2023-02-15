@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_strncat - concatenates two strings
 *@dest: first parameter
