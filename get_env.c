@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *get_environ - returns string copy of env
 *@info: first parameter
