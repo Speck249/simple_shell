@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *strtow - splits string into words.
 *@str: first parameter
