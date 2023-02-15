@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *is_chain - checks for a chain delimiter
 *@info: first parameter
