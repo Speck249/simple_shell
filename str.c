@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_strlen - computes string length
 *@str: parameter
