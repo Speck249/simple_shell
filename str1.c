@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_strcpy - copies a string
 *@dest: first parameter
