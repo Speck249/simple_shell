@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 * input_buf - buffers chained commands
 *@info: first parameter
