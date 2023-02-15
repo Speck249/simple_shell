@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *bfree - frees pointer & sets address to NULL
 *@ptr: parameter
