@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *get_history_file - gets the history file
 *@info: parameter
