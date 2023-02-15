@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *hsh - main shell loop
 *@info: first parameter
