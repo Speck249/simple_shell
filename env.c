@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 _env - prints shell environment
 *@info: parameter
