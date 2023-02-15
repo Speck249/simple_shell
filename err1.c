@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_erratoi - converts string to integer
 *@str: parameter
