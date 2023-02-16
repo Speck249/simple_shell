@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *set_alias - sets alias to string
 *@info: first parameter

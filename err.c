@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_eputs - prints input string
 *@str: parameter

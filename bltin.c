@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *_cd - change directory
 *@info: parameter

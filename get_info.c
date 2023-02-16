@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *clear_info - initializes info_t struct
 *@info: parameter

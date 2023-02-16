@@ -1,4 +1,4 @@
-#include "smpshl.h"
+#include "main.h"
 /**
 *is_cmd - determines if file is executable
 *@info: first parameter
