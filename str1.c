@@ -70,7 +70,7 @@ int _putchar(char ch)
 static int counter;
 static char buf[WRITE_BUF_SIZE];
 
-if (ch == BUF_FLUSH || i >= WRITE_BUF_SIZE)
+if (ch == BUF_FLUSH || counter >= WRITE_BUF_SIZE)
 {
 write(1, buf, counter);
 counter = 0;

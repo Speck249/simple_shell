@@ -20,7 +20,7 @@ info->argc = 0;
 */
 void set_info(info_t *info, char **av)
 {
-int coutner = 0;
+int counter = 0;
 
 info->fname = av[0];
 if (info->arg)
@@ -35,8 +35,9 @@ info->argv[0] = _strdup(info->arg);
 info->argv[1] = NULL;
 }
 }
+
 for (counter = 0; info->argv && info->argv[counter]; counter++)
-			;
+;
 info->argc = counter;
 
 replace_alias(info);

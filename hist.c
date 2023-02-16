@@ -119,11 +119,11 @@ return (0);
 }
 
 /**
-*renumerate_history - renumbers history linked list after changes
+*renumber_history - renumbers history linked list after changes
 *@info: parameter
 *Return: new history count
 */
-int renumerate_history(info_t *info)
+int renumber_history(info_t *info)
 {
 list_t *node = info->history;
 int counter = 0;

@@ -78,16 +78,16 @@ return (new_node);
 */
 size_t print_list_str(const list_t *h)
 {
-size_t counter = 0;
+size_t i = 0;
 
 while (h)
 {
 _puts(h->str ? h->str : "(nil)");
 _puts("\n");
 h = h->next;
-counter++;
+i++;
 }
-return (counter);
+return (i);
 }
 
 /**

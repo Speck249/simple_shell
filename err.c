@@ -19,7 +19,7 @@ counter++;
 
 /**
 * _eputchar - writes character ch to stderr
-*@c: parameter
+*@ch: parameter
 *Return: 1 for success, -1 for error
 */
 int _eputchar(char ch)
@@ -72,7 +72,7 @@ if (!str)
 return (0);
 while (*str)
 {
-counter+= _putfd(*str++, fd);
+counter += _putfd(*str++, fd);
 }
 return (counter);
 }

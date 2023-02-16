@@ -73,7 +73,7 @@ if (_abs_ / counter)
 __putchar('0' + current / counter);
 count++;
 }
-current %= i;
+current %= counter;
 }
 __putchar('0' + current);
 count++;

@@ -57,7 +57,7 @@ if (!ptr)
 return (1);
 
 ch = *ptr;
-*ptr= 0;
+*ptr = 0;
 result = delete_node_at_index(&(info->alias),
 get_node_index(info->alias, node_starts_with(info->alias, str, -1)));
 *ptr = ch;

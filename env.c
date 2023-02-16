@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-_env - prints shell environment
+*_env - prints shell environment
 *@info: parameter
 *Return: Always 0 (success)
 */
