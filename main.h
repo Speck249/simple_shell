@@ -141,8 +141,8 @@ void _puts(char *);
 int _putchar(char);
 
 /* exit.c >> function prototypes */
-char *_strncat(char *, char *, int);
 char *_strncpy(char *, char *, int);
+char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
 /** tok.c >> function prototypes **/
