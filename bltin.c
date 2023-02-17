@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*_exit - enables shell exit
+*_myexit - enables shell exit
 *@info: parameter
 *Return: exit status
 */
-int _exit(info_t *info)
+int _myexit(info_t *info)
 {
 int exitcheck;
 
@@ -27,11 +27,11 @@ return (-2);
 }
 
 /**
-*_cd - change directory
+*_mycd - change directory
 *@info: parameter
 *Return: Always 0 (success)
 */
-int _cd(info_t *info)
+int _mycd(info_t *info)
 {
 char *str, *dir, buffer[1024];
 int chdir_ret;
@@ -76,11 +76,11 @@ return (0);
 }
 
 /**
-*_help - changes current directory of process
+*_myhelp - changes current directory of process
 *@info: parameter
 *Return: Always 0 (success)
 */
-int _help(info_t *info)
+int _myhelp(info_t *info)
 {
 char **arg_array;
 arg_array = info->argv;

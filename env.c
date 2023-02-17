@@ -21,22 +21,22 @@ return (NULL);
 }
 
 /**
-*_env - prints shell environment
+*_myenv - prints shell environment
 *@info: parameter
 *Return: Always 0 (success)
 */
-int _env(info_t *info)
+int _myenv(info_t *info)
 {
 print_list_str(info->env);
 return (0);
 }
 
 /**
-* _setenv - creates or modifies env variable
+* _mysetenv - creates or modifies env variable
 *@info: parameter
 *Return: Always 0 (success)
 */
-int _setenv(info_t *info)
+int _mysetenv(info_t *info)
 {
 if (info->argc != 3)
 {
@@ -49,11 +49,11 @@ return (1);
 }
 
 /**
-*_unsetenv - Remove an environment variable
+*_myunsetenv - Remove an environment variable
 *@info: parameter
 *Return: Always 0(success)
 */
-int _unsetenv(info_t *info)
+int _myunsetenv(info_t *info)
 {
 int counter;
 

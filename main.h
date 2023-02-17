@@ -171,9 +171,9 @@ char *convert_num(long int, int, int);
 void remove_comments(char *);
 
 /* bltin.c >> function prototypes */
-int _exit(info_t *);
-int _cd(info_t *);
-int _help(info_t *);
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
 
 /* bltin1.c >> function prototypes */
 int _history(info_t *);
@@ -190,10 +190,10 @@ void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
 /* env.c >> function prototypes */
-char *_getenv(info_t *, cont char *);
-int _env(info_t *);
-int _setenv(info_t *);
-int _unsetenv(info_t *);
+char *_getenv(info_t *, const char *);
+int _myenv(info_t *);
+int _mysetenv(info_t *);
+int _myunsetenv(info_t *);
 int populate_env_list(info_t *);
 
 /* get_env.c >> function prototypes */
