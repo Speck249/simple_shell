@@ -104,5 +104,5 @@ set_alias(info, info->argv[counter]);
 else
 print_alias(node_starts_with(info->alias, info->argv[counter], '='));
 }
-return (0)
+return (0);
 }
