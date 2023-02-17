@@ -111,13 +111,13 @@ continue;
 if (!_strcmp(info->argv[counter], "$?"))
 {
 replace_string(&(info->argv[counter]),
-_strdup(convert_number(info->status, 10, 0)));
+_strdup(convert_num(info->status, 10, 0)));
 continue;
 }
 if (!_strcmp(info->argv[counter], "$$"))
 {
 replace_string(&(info->argv[counter]),
-_strdup(convert_number(getpid(), 10, 0)));
+_strdup(convert_num(getpid(), 10, 0)));
 continue;
 }
 node = node_starts_with(info->env, &info->argv[counter][1], '=');
