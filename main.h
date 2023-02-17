@@ -171,7 +171,7 @@ char *convert_num(long int, int, int);
 void remove_comments(char *);
 
 /* bltin.c >> function prototypes */
-int _exit(info_t *)
+int _exit(info_t *);
 int _cd(info_t *);
 int _help(info_t *);
 
@@ -187,7 +187,7 @@ void sigintHandler(int);
 /* get_info.c >> function prototypes */
 void clear_info(info_t *);
 void set_info(info_t *, char **);
-void free_info(info_t *, int)
+void free_info(info_t *, int);
 
 /* env.c >> function prototypes */
 char *_getenv(info_t *, cont char *);
