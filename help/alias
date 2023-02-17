@@ -1,0 +1,18 @@
+NAME
+alias — define or display aliases
+
+DESCRIPTION
+Create or redefine alias definitions or write the values of existing alias definitions to standard output.
+
+OPTIONS - None.
+
+OPERANDS
+alias-name - Write alias definition to standard output.
+
+alias-name=string - Assign string value to alias-name.
+
+NOTE - If no operands are given, all alias definitions shall be written to standard output.
+
+EXIT STATUS
+0    Successful completion.
+>0    One of the name operands specified did not have an alias definition, or an error occurred.

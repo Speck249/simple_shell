@@ -1,0 +1,13 @@
+NAME
+cd — change the working directory
+
+SYNOPSIS
+cd [−L|−P] [directory]
+cd −
+
+DESCRIPTION
+Changes working directory of the current shell execution environment. 
+
+EXIT STATUS
+0    The directory was successfully changed.
+>0    An error occurred.

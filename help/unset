@@ -1,0 +1,12 @@
+NAME
+unset — unset values and attributes of variables and functions
+
+SYNOPSIS
+unset [−fv] name...
+
+DESCRIPTION
+Unset values and attributes of shell variables and functions. Without options, unset first tries to unset a variable, and if that fails,
+
+EXIT STATUS
+0    All name operands were successfully unset.
+>0    At least one name could not be unset.

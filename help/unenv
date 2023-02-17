@@ -1,0 +1,7 @@
+NAME - unenv
+
+DESCRIPTION
+Remove each NAME from the list of defined environment variables
+
+EXIT STATUS
+Return 0 for success unless a NAME is not an existing alias.

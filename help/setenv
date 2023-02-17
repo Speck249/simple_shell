@@ -1,0 +1,8 @@
+NAME
+setenv - change or add an environment variable
+
+DESCRIPTION
+Adds variable name to the environment with the value, if name does not already exist.
+
+RETURN VALUE
+Returns zero on success, or -1 on error.

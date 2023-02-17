@@ -1,0 +1,6 @@
+NAME
+unalias — remove alias definitions
+
+EXIT STATUS
+0    Successful completion.
+>0    One of the alias-name operands specified did not represent a valid alias definition, or an error occurred.

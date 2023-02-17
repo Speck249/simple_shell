@@ -1,0 +1,6 @@
+NAME - help
+
+DESCRIPTION - displays brief summaries of builtin commands.
+    
+EXIT STATUS:
+Returns success unless PATTERN is not found or an invalid option is given.

@@ -1,0 +1,4 @@
+NAME - history
+
+DESCRIPTION
+History tracks and displays user input and  associate arbitrary data with each line, and utilize information from previous lines in composing new ones.
