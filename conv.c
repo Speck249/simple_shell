@@ -1,16 +1,12 @@
 #include "main.h"
 /**
-*_isalpha - checks for alphabetic character
-*@ch: parameter
-*Return: 1 if true, 0 if false
+*interactive - checks if shell is interactive
+*@info: parameter
+*Return: interactive status
 */
-int _isalpha(int ch)
+int interactive(info_t *info)
 {
-if ((ch > 96  && ch < 123) || (ch > 64 && ch < 91))
-return (1);
-
-else
-return (0);
+return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
 
 /**
@@ -30,13 +26,17 @@ return (0);
 }
 
 /**
-*interactive - checks if shell is interactive
-*@info: parameter
-*Return: interactive status
+*_isalpha - checks for alphabetic character
+*@ch: parameter
+*Return: 1 if true, 0 if false
 */
-int interactive(info_t *info)
+int _isalpha(int ch)
 {
-return (isatty(STDIN_FILENO) && info->readfd <= 2);
+if ((ch > 96  && ch < 123) || (ch > 64 && ch < 91))
+return (1);
+
+else
+return (0);
 }
 
 /**

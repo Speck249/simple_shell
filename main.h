@@ -158,9 +158,9 @@ void *_realloc(void *, unsigned int, unsigned int);
 int bfree(void **);
 
 /* conv.c >> function prototypes */
-int _isalpha(int);
-int is_delim(char, char *);
 int interactive(info_t *);
+int is_delim(char, char *);
+int _isalpha(int);
 int _atoi(char *);
 
 /* err1.c >> function prototypes */
@@ -171,16 +171,13 @@ char *convert_num(long int, int, int);
 void remove_comments(char *);
 
 /* bltin.c >> function prototypes */
+int _exit(info_t *)
 int _cd(info_t *);
-int _exit(info_t *);
 int _help(info_t *);
 
 /* bltin1.c >> function prototypes */
-int set_alias(info_t *, char *);
-int print_alias(list_t *);
-int unset_alias(info_t *, char *);
-int _alias(info_t *);
 int _history(info_t *);
+int _alias(info_t *);
 
 /* get_line.c >> function prototypes */
 ssize_t get_input(info_t *);
@@ -193,8 +190,8 @@ void set_info(info_t *, char **);
 void free_info(info_t *, int)
 
 /* env.c >> function prototypes */
+char *_getenv(info_t *, cont char *);
 int _env(info_t *);
-char *_getenv(info_t *, const char *);
 int _setenv(info_t *);
 int _unsetenv(info_t *);
 int populate_env_list(info_t *);

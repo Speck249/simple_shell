@@ -1,44 +1,13 @@
 #include "main.h"
 /**
-*set_alias - sets alias to string
-*@info: first parameter
-*@str: second parameter
+*_history - enables history display
+*@info: parameter
 *Return: Always 0 (success)
 */
-int set_alias(info_t *info, char *str)
+int _history(info_t *info)
 {
-char *ptr;
-
-ptr = _strchr(str, '=');
-if (!ptr)
-return (1);
-if (!*++ptr)
-return (unset_alias(info, str));
-
-unset_alias(info, str);
-return (add_node_end(&(info->alias), str, 0) == NULL);
-}
-
-/**
-* print_alias - prints alias string
-* @node: parameter
-* Return: Always 0 (success)
-*/
-int print_alias(list_t *node)
-{
-char *ptr = NULL, *a = NULL;
-
-if (node)
-{
-ptr = _strchr(node->str, '=');
-for (a = node->str; a <= ptr; a++)
-_putchar(*a);
-_putchar('\'');
-_puts(ptr + 1);
-_puts("'\n");
+print_list(info->history);
 return (0);
-}
-return (1);
 }
 
 /**
@@ -62,6 +31,48 @@ result = delete_node_at_index(&(info->alias),
 get_node_index(info->alias, node_starts_with(info->alias, str, -1)));
 *ptr = ch;
 return (result);
+}
+
+/**
+*set_alias - sets alias to string
+*@info: first parameter
+*@str: second parameter
+*Return: Always 0 (success)
+*/
+int set_alias(info_t *info, char *str)
+{
+char *ptr;
+
+ptr = _strchr(str, '=');
+if (!ptr)
+return (1);
+if (!*++ptr)
+return (unset_alias(info, str));
+
+unset_alias(info, str);
+return (add_node_end(&(info->alias), str, 0) == NULL);
+}
+
+/**
+*print_alias - prints alias string
+*@node: parameter
+*Return: Always 0 (success)
+*/
+int print_alias(list_t *node)
+{
+char *ptr = NULL, *a = NULL;
+
+if (node)
+{
+ptr = _strchr(node->str, '=');
+for (a = node->str; a <= ptr; a++)
+_putchar(*a);
+_putchar('\'');
+_puts(ptr + 1);
+_puts("'\n");
+return (0);
+}
+return (1);
 }
 
 /**
@@ -93,16 +104,5 @@ set_alias(info, info->argv[counter]);
 else
 print_alias(node_starts_with(info->alias, info->argv[counter], '='));
 }
-return (0);
-}
-
-/**
-*_history - enables history display
-*@info: parameter
-*Return: Always 0 (success)
-*/
-int _history(info_t *info)
-{
-print_list(info->history);
-return (0);
+return (0)
 }

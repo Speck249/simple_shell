@@ -1,16 +1,5 @@
 #include "main.h"
 /**
-*_env - prints shell environment
-*@info: parameter
-*Return: Always 0 (success)
-*/
-int _env(info_t *info)
-{
-print_list_str(info->env);
-return (0);
-}
-
-/**
 *_getenv - gets env variable value
 *@info: first parameter
 *@name: second parameter
@@ -29,6 +18,17 @@ return (ptr);
 node = node->next;
 }
 return (NULL);
+}
+
+/**
+*_env - prints shell environment
+*@info: parameter
+*Return: Always 0 (success)
+*/
+int _env(info_t *info)
+{
+print_list_str(info->env);
+return (0);
 }
 
 /**
@@ -69,9 +69,9 @@ return (0);
 }
 
 /**
-* populate_env_list - populates env linked list
-* @info: parameter
-* Return: Always 0 (success)
+*populate_env_list - populates env linked list
+*@info: parameter
+*Return: Always 0 (success)
 */
 int populate_env_list(info_t *info)
 {
